@@ -4,10 +4,11 @@
 __all__ = ['scrape_twitter_page', 'extract_tweets_from_file']
 
 # %% ../nbs/00_twitterscraper.ipynb 3
+import time
 def scrape_twitter_page(driver, url, scroll_limit=10, sleep_time=2):
     # Open the desired Twitter page
     driver.get(url)
-
+    import time
     # Wait for the page to load
     time.sleep(sleep_time)
 
@@ -35,6 +36,8 @@ def scrape_twitter_page(driver, url, scroll_limit=10, sleep_time=2):
 
 # %% ../nbs/00_twitterscraper.ipynb 4
 def extract_tweets_from_file(file_path):
+    from bs4 import BeautifulSoup
+
     with open(file_path, 'r', encoding='utf-8') as file:
         html = file.read()
 
