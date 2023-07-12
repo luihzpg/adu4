@@ -1,0 +1,7 @@
+website:
+  sidebar:
+    contents:
+      - index.ipynb
+      - 00_core.ipynb
+      - 00_twitterscraper.ipynb
+      - twitter_content_1.html
