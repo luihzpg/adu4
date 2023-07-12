@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "adu4"
+  site-url: "https://luihzpg.github.io/adu4"
+  description: "this is the 4th trial to deploy a working webpage"
+  repo-branch: main
+  repo-url: "https://github.com/luihzpg/adu4"
